@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFF0"
+        android:textSize="20dp"
+        android:background="@+drawable/title_bg"
+        android:text="可以使用蓝牙设备" />
+    
+    <ListView android:id="@+id/pairdev"
+        android:background="@null" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" 
+        android:dividerHeight="5dp" 
+        android:divider="@+drawable/line" 
+        android:transcriptMode="alwaysScroll"
+        android:layout_weight="1"
+    />
+    
+    <Button android:id="@+id/goto_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@+drawable/button"
+        android:layout_gravity="center_horizontal" 
+        android:text="前往蓝牙设置"
+    />
+</LinearLayout>
